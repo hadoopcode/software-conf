@@ -21,61 +21,79 @@
  */
 -->
 <configuration>
-    <property>
-        <name>hbase.rootdir</name>
-        <value>hdfs://192.168.79.200:9000/hbase</value>
-    </property>
+	<property>
+		<name>hbase.rootdir</name>
+		<value>hdfs://192.168.79.200:8020/hbase</value>
+	</property>
 
-    <property>
-        <name>hbase.unsafe.stream.capability.enforce</name>
-        <value>false</value>
-    </property>
+	<property>
+		<name>hbase.unsafe.stream.capability.enforce</name>
+		<value>false</value>
+	</property>
 
-    <property>
-        <name>hbase.master.port</name>
-        <value>16000</value>
-    </property>
+	<property>
+		<name>hbase.master.port</name>
+		<value>16000</value>
+	</property>
 
-    <property>
-        <name>hbase.master.info.port</name>
-        <value>16010</value>
-    </property>
+	<property>
+		<name>hbase.master.info.port</name>
+		<value>16010</value>
+	</property>
 
-    <property>
-        <name>hbase.regionserver.port</name>
-        <value>16201</value>
-    </property>
+	<property>
+		<name>hbase.regionserver.port</name>
+		<value>16020</value>
+	</property>
 
-    <property>
-        <name>hbase.regionserver.info.port</name>
-        <value>16301</value>
-    </property>
+	<property>
+		<name>hbase.regionserver.info.port</name>
+		<value>16030</value>
+	</property>
 
-    <property>
-        <name>hbase.cluster.distributed</name>
-        <value>true</value>
-    </property>
+	<property>
+		<name>hbase.cluster.distributed</name>
+		<value>true</value>
+	</property>
 
-   <!-- <property>
-        <name>hbase.zookeeper.quorum</name>
-        <value>pseudo:2181</value>
-    </property>
-   -->
+	<property>
+		<name>hbase.table.sanity.checks</name>
+		<value>false</value>
+	</property>
 
-    <property>
-         <name>hbase.zookeeper.property.clientPort</name>
-         <value>2181</value>
-     </property>
+	<property>
+		<name>hbase.zookeeper.property.clientPort</name>
+		<value>2181</value>
+	</property>
 
-     <property>
-         <name>hbase.zookeeper.quorum</name>
-         <value>pseudo</value>
-     </property>
+	<property>
+		<name>hbase.zookeeper.quorum</name>
+		<value>192.168.79.200</value>
+	</property>
+
+	<property>
+		<name>hbase.zookeeper.property.dataDir</name>
+		<value>/opt/module/zookeeper/zkData</value>
+	</property>
+
+	<property>
+		<name>phoenix.query.timeoutMs</name>
+		<value>1200000</value>
+	</property>
+	<property>
+		<name>phoenix.query.keepAliveMs</name>
+		<value>1200000</value>
+	</property>
+
+	<property>
+		<name>hbase.rpc.timeout</name>
+		<value>1200000</value>
+	</property>
 
 
-    <property>
-        <name>hbase.zookeeper.property.dataDir</name>
-        <value>/opt/module/zookeeper/zkData</value>
-    </property>
+	<property>
+		<name>hbase.client.scanner.timeout.period</name>
+		<value>1200000</value>
+	</property>
 
 </configuration>

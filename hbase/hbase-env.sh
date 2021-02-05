@@ -18,7 +18,7 @@
 # */
 
 # Set environment variables here.
-export JAVA_HOME=/opt/module/jdk
+export JAVA_HOME=/opt/kit/jdk
 # This script sets variables multiple times over the course of starting an hbase process,
 # so try to keep things idempotent unless you want to take an even deeper look
 # into the startup scripts (bin/hbase, etc.)
